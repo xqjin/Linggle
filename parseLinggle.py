@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
-import urllib
+import urllib2
 import json
 
 
@@ -9,7 +9,7 @@ def parselinggle(itemlist):
     #itemlist : a list of words
     token = " ".join(itemlist)
     # insert sapce or not is the same!
-    page = urllib.urlopen(u'http://www.linggle.com/query/%s' %token,timeout=1000)
+    page = urllib2.urlopen(u'http://www.linggle.com/query/%s' %token,timeout=1000)
     if page.getcode()==404:
         return 0
 
