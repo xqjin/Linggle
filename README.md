@@ -5,4 +5,3 @@ This file is design to parse Linggle which is a interface to Google Web 1T corpu
 
 Maybe it is useful for someday !
 
-I Love it
